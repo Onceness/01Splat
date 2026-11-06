@@ -1,0 +1,24 @@
+# Public product repository: never stage application data or private runtime material.
+.DS_Store
+Thumbs.db
+Desktop.ini
+.env
+.env.*
+*.local.*
+*.log
+*.01splat
+*.dll
+*.exe
+*.msi
+*.pdb
+*.pt
+*.pth
+*.safetensors
+*.ply
+*.sog
+*.spz
+captures/
+*.insv
+node_modules/
+__pycache__/
+.venv/

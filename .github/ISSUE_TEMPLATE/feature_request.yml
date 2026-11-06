@@ -1,0 +1,31 @@
+name: Suggest a feature
+description: Describe the outcome you want, not the implementation you have to use.
+title: "[Feature] "
+labels: [enhancement, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Chinese is welcome. Search existing suggestions first; add your use case there if one already matches.
+        This is a public conversation. Keep client material and account information out of the report.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe your workflow and where the current tools get in your way.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would a useful result look like?
+      description: Explain how you would use the feature. Technical knowledge is not required.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround or references
+      description: Optional. You can share a non-confidential example, a sketch or a link.
+    validations:
+      required: false

@@ -1,0 +1,51 @@
+name: Capture or format compatibility
+description: Report a camera, recording mode or dataset that needs attention.
+title: "[Capture] "
+labels: [compatibility, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please start with the recording details; original footage is not required for this public report.
+        Do not attach private captures or a complete project. English and Chinese are welcome.
+  - type: input
+    id: version
+    attributes:
+      label: 01Splat version
+    validations:
+      required: true
+  - type: dropdown
+    id: input
+    attributes:
+      label: Input family
+      options:
+        - Single image
+        - Photo set
+        - Ordinary video
+        - Stitched 360 video or panorama
+        - INSV recording
+        - COLMAP dataset
+        - Other or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: capture
+    attributes:
+      label: Device and recording or export settings
+      description: Camera or device model, recording mode, resolution, frame rate, firmware or exporter version when known. Do not post device serial numbers.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happens in 01Splat?
+      description: Tell us how you imported it, which stage is affected, and any visible message. You do not need to name the internal engine.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional non-confidential details
+      description: Optional. Include relevant GPU or driver details, or a link to the camera's public format documentation.
+    validations:
+      required: false

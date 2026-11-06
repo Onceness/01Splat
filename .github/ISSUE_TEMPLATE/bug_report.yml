@@ -1,0 +1,77 @@
+name: Report a bug
+description: Something did not work as expected. English or Chinese is welcome.
+title: "[Bug] "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve 01Splat. Search existing issues first.
+        This report is public. Do not attach confidential captures, complete projects, account information, tokens or license data.
+        For private account or security questions, email support@01splat.com.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Tell us what you expected and what happened instead.
+      placeholder: "I was trying to ... I expected ... Instead ..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 01Splat version
+      description: Copy the exact version shown in the application.
+    validations:
+      required: true
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Where does it happen?
+      options:
+        - Installation or update
+        - Sign-in or access
+        - Import or input preparation
+        - Camera reconstruction
+        - Training or result quality
+        - Viewport or navigation
+        - Scene organization or settings
+        - Pause or resume
+        - Save or reopen a project
+        - Export
+        - Other or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: A short sequence is enough. Say if the problem happens every time.
+      placeholder: |
+        1. Import ...
+        2. Choose ...
+        3. Start ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: System and input
+      description: Include Windows version, GPU and driver if relevant, input type and approximate scene size. Do not include private paths.
+      placeholder: "Windows version / GPU / driver / input type / approximate image count"
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or sanitized error details
+      description: Optional. Review every attachment for private information. Do not paste full unreviewed logs.
+    validations:
+      required: false
+  - type: checkboxes
+    id: public-report
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked my report and attachments for private material, credentials and license data.
+          required: true

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide
+    url: https://01splat.com/docs/
+    about: Setup, supported inputs and product workflows.
+  - name: Private account and billing support
+    url: mailto:support@01splat.com
+    about: Do not post account, subscription or payment information in a public issue.
+  - name: Report a security issue privately
+    url: mailto:support@01splat.com?subject=Security%20report
+    about: Describe suspected vulnerabilities privately, not in a public issue.
